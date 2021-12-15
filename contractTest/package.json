@@ -1,37 +1,28 @@
 {
-  "name": "truffle_rinkeby",
+  "name": "data-marketplace",
+  "author": "HexRabbit",
   "version": "1.0.0",
-  "description": "",
-  "main": "",
+  "description": "This is a decentralized data marketplace that allows data consumers to place bids on auctions for high-value sensor/IoT devices to compensate for invaluable data.",
+  "main": "truffle.js",
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "build": "truffle compile --reset",
-    "ether_build": "node ./scripts/compile.js",
-    "ether_deploy": "node ./scripts/deploy.js ERC20",
-    "deploy": "truffle migrate --reset --network infura_rinkeby",
-    "test": "truffle test/Bookmarks.test.js"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Runskey/truffle_rinkeby.git"
+    "url": "https://github.com/DLTcollab/data-marketplace"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Runskey/truffle_rinkeby/issues"
+  "scripts": {
+    "compile": "truffle compile",
+    "test": "truffle test"
   },
-  "homepage": "https://github.com/Runskey/truffle_rinkeby#readme",
+  "license": "MIT",
   "dependencies": {
-    "dotenv": "8.1.0",
-    "ethers": "4.0.38",
-    "fs-extra": "8.1.0",
-    "path": "0.12.7",
-    "solc": "0.5.12",
-    "truffle": "5.0.18",
-    "truffle-artifactor": "4.0.30",
-    "truffle-contract": "4.0.31",
-    "truffle-hdwallet-provider": "1.0.9"
+    "abi-decoder": "^1.2.0",
+    "ganache-cli": "^6.3.0",
+    "openzeppelin-solidity": "2.1.2",
+    "truffle-assertions": "^0.8.0",
+    "truffle-events": "0.0.7",
+    "truffle-test-utils": "^0.1.0",
+    "web3": "1.0.0-beta.37"
   }
 }
